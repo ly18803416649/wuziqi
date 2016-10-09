@@ -1,0 +1,140 @@
+@import "mixin";
+#canvas{
+  border: 1px solid #000;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  display: none;
+  //background: url("../img/bg.png");
+}
+.win{
+  width: 100px;
+  height:50px;
+  display: none;
+}
+.anniu{
+  width:200px;
+  height:100px;
+  background: url("../img/anniu2.png") no-repeat center center;
+  background-size: contain;
+  font-size: 20px;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  display: none;
+  cursor: pointer;
+}
+.ai{
+
+  position: absolute;
+  top:20px;
+  left:20px;
+
+}
+.two{
+  position: absolute;
+  top: 140px;
+  left: 20px;
+}
+.start{
+  position: absolute;
+  bottom: 20px;
+  left:20px;
+}
+.active{
+  opacity: 0;
+}
+.bg1{
+  width: 100%;
+  height: 100%;
+  background: url("../img/begin.jpg") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+}
+.bg2{
+  width: 100%;
+  height: 100%;
+  background: url("../img/mozhu1.jpg") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  display: none;
+}
+.begin{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  bottom: 100px;
+  left: 200px;
+  background: url("../img/anniu.png") no-repeat center center;
+  background-size: contain;
+  z-index: 90;
+  font-size: 20px;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.moji{
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  background: url("../img/moji.png") no-repeat center center;
+  background-size: contain;
+  transition: all 1s ease;
+  display: none;
+  div{
+    width: 600px;
+    height:500px;
+    @include center;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 400px;
+    font-weight: 400;
+  }
+}
+.he{
+  width:150px;
+  height:150px;
+  position: absolute;
+  display: none;
+}
+.baihe{
+  background: url("../img/baihe.png") no-repeat center center;
+  background-size: contain;
+  top:30px;
+  right:50px;
+}
+.heihe{
+  background: url("../img/heihe.png") no-repeat center center;
+  background-size: contain;
+  bottom:30px;
+  right:50px;
+}
+#biao{
+  position: absolute;
+  top:50%;
+  right:30px;
+  margin-top: -150px;
+  background: url("../img/biaopan.png") no-repeat center center;
+  background-size: contain;
+  display: none;
+}

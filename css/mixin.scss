@@ -1,0 +1,98 @@
+//全局样式
+p,h1,h2,h3,h4,h5,ul,li,body,h6{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a,em{
+    text-decoration: none;
+    font-style: normal;
+}
+ul,li{
+    list-style: none;
+}
+img{
+    border: 0px;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+//全局样式
+@mixin center{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+//居中
+%center{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+//@extend 引用居中
+@mixin shangxiaCenter{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+// 上下居中
+@mixin zuoyouCenter{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto; 
+}
+// 左右居中
+@mixin fang($size){
+    width: $size;
+    height: $size;
+}
+// 生成正方形
+@mixin yuan($size){
+    @include fang($size);
+    border-radius: 50%;
+}
+// 生成圆形
+$l-size: 1080px;
+@mixin largeRespond{
+    @media screen and (max-width:$l-size){
+        @content;
+    }
+}
+//最大的响应布局
+$m-size: 768px;
+@mixin middleRespond{
+    @media screen and (max-width:$m-size){
+        @content;
+    }
+}
+// 中等布局响应
+$s-size: 480px;
+@mixin smallRespond{
+    @media screen and (max-width:$s-size){
+        @content;
+    }
+}
+// 最小的响应布局
+@mixin themeColor{
+    background-color: #1B1B1B;
+}
+
+

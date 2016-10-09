@@ -1,0 +1,190 @@
+p, h1, h2, h3, h4, h5, ul, li, body, h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a, em {
+  text-decoration: none;
+  font-style: normal;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  border: 0px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#canvas {
+  border: 1px solid #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+}
+
+.win {
+  width: 100px;
+  height: 50px;
+  display: none;
+}
+
+.anniu {
+  width: 200px;
+  height: 100px;
+  background: url("../img/anniu2.png") no-repeat center center;
+  background-size: contain;
+  font-size: 20px;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  display: none;
+  cursor: pointer;
+}
+
+.ai {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.two {
+  position: absolute;
+  top: 140px;
+  left: 20px;
+}
+
+.start {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.active {
+  opacity: 0;
+}
+
+.bg1 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/begin.jpg") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.bg2 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/mozhu1.jpg") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+}
+
+.begin {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  bottom: 100px;
+  left: 200px;
+  background: url("../img/anniu.png") no-repeat center center;
+  background-size: contain;
+  z-index: 90;
+  font-size: 20px;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.moji {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("../img/moji.png") no-repeat center center;
+  background-size: contain;
+  transition: all 1s ease;
+  display: none;
+}
+
+.moji div {
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 400px;
+  font-weight: 400;
+}
+
+.he {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  display: none;
+}
+
+.baihe {
+  background: url("../img/baihe.png") no-repeat center center;
+  background-size: contain;
+  top: 30px;
+  right: 50px;
+}
+
+.heihe {
+  background: url("../img/heihe.png") no-repeat center center;
+  background-size: contain;
+  bottom: 30px;
+  right: 50px;
+}
+
+#biao {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  margin-top: -150px;
+  background: url("../img/biaopan.png") no-repeat center center;
+  background-size: contain;
+  display: none;
+}
